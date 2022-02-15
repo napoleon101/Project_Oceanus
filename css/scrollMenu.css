@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+/* NAV */
+.navigation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+.nav__item{
+    font-family: 'Montserrat';
+    font-size: 1em;
+    color: black;
+
+    text-decoration: none;
+
+    margin: 2em 0 0 0;
+}
+
+
+/* CONTAINER */
+.container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+.container img{
+    margin: 1em;
+
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
