@@ -9,13 +9,14 @@
 }
 .logopanel img{
     flex: 0 1 auto;
-    height: 2.5em;
+    height: 100%;
     width: auto;
-    position: absolute;             /* new */
+    position: relative;             /* new */
     left: 50%;
     transform: translateX(-50%);
 }
 #toggle{
+    display: none;
     position: relative;
     flex: 0 1 auto;
     margin: 1vh 2vw 0 auto;

@@ -19,31 +19,46 @@ input{
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: "proxima-nova";
+    src: url(../assets/fonts/ProximaNova/MarkSimonson-ProximaNovaRegular.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 /* NAV */
 #nav{
     flex-direction: column;
     align-items: center;
-    height: 50vh;
-    margin-top: 1em;
+    height: 30vh;
+    margin-top: .5em;
 
-    transform: scale(1, 0);
+    background: #7D2435 ;
+    /* transform: scale(1, 0);
     transform-origin: top;
-    transition: transform 150ms ease-out;
+    transition: transform 150ms ease-out; */
 }
 .nav__item{
-    font-family: 'adobe-garamond-pro';
+    font-family: 'proxima-nova';
+    font-weight: normal;
+    letter-spacing: .05em;
     font-size: 1em;
-    color: black;
+    color: rgb(255, 255, 255);
     width: 100%;
     text-decoration: none;
     text-align: center;
 
     padding: 1em;
-    margin: 0 0 0 0;
+    margin: .5em 0 0 0;
 }
+
 a:hover{
-    color: #e6002a; 
+    color: black;
+}
+
+a:active{
+    color: rgb(0, 0, 0); 
 }
 
 
@@ -52,11 +67,14 @@ a:hover{
     width: 100vw;
     display: flex;
     flex-direction: column;
+    align-items: center;
     
 }
 .container img{
-    margin: 1em;
+    margin: 1em 0;
+    padding: 0;
 
+    max-width: 90vw;
     overflow: hidden;
     background-size: cover;
     background-position: center;
