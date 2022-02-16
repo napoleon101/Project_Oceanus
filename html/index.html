@@ -7,11 +7,16 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="../css/scrollMenu.css">
-
+    <link rel="stylesheet" href="../css/header.css">
+    <script src="../js/menutoggle.js"></script>
 
 </head>
 <body>
-    <nav class="navigation">
+    <div class="logopanel">
+        <img src="../assets/graphics/enso_zen_circle_logo.svg" alt="" srcset="">
+        <input id="toggle" type="button" value="Menu" onclick="switchVisible();"/>
+    </div>
+    <nav id="nav" class="navigation" style="display: none; transform: scale(0); opacity: 1;">
         <a href="" class="nav__item">Lorem ipsum</a>
         <a href="" class="nav__item">Lorem ipsum</a>
         <a href="" class="nav__item">Lorem ipsum</a>

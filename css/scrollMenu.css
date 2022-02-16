@@ -3,24 +3,47 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    font-size: 1rem;
+}
+button{
+    all: unset;
+    cursor: pointer;
+}
+input{
+    all: unset;
 }
 
+@font-face {
+    font-family: "adobe-garamond-pro";
+    src: url(../assets/fonts/AdobeGaramondPro/AGaramondPro-Regular.otf);
+    font-weight: normal;
+    font-style: normal;
+}
 
 /* NAV */
-.navigation{
-    display: flex;
+#nav{
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    height: 50vh;
+    margin-top: 1em;
+
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 150ms ease-out;
 }
 .nav__item{
-    font-family: 'Montserrat';
+    font-family: 'adobe-garamond-pro';
     font-size: 1em;
     color: black;
-
+    width: 100%;
     text-decoration: none;
+    text-align: center;
 
-    margin: 2em 0 0 0;
+    padding: 1em;
+    margin: 0 0 0 0;
+}
+a:hover{
+    color: #e6002a; 
 }
 
 
@@ -29,6 +52,7 @@
     width: 100vw;
     display: flex;
     flex-direction: column;
+    
 }
 .container img{
     margin: 1em;
