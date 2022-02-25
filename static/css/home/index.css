@@ -1,0 +1,98 @@
+
+header{
+    height: 55vh;
+}
+
+.homeSection{
+    margin: 0 0 0 0;
+
+    height: 45vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    font-family: 'proxima-nova';
+
+}
+
+h1{
+
+    color: black;
+
+    font-size: 1.3em;
+    font-family: inherit;
+}
+.aboutText{
+    display: flex;
+    flex-direction: column;
+
+
+    color: var(--clr-accent) !important;
+
+    text-align: center;
+    margin: .7em 0 2em 0;
+    max-width: 75vw;
+
+    font-size: 1em;
+    font-family: inherit;
+}
+
+
+.contactLink{
+    display: block;
+    text-align: center;
+    margin: .5em 0 0 0;
+    text-decoration: underline;
+    color: var(--clr-accent);
+    cursor: pointer;
+}
+
+a:hover{
+    color: var(--clr-hover);
+}
+a:active{
+    color: var(--clr-primary);
+}
+
+
+#twitterlink::before{
+    content: '';
+    display: block;
+    position: absolute;
+    transform: translateX(-1.5em);
+    height: 1em;
+    width: 1em;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: url(/graphics/icon-twitter.svg);
+}
+
+
+#instagramlink::before{
+    content: '';
+    display: block;
+    position: absolute;
+    transform: translateX(-1.5em);
+    height: 1em;
+    width: 1em;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: url(/graphics/icon-instagram.svg);
+}
+
+#gmaillink::before{
+    content: '';
+    display: block;
+    position: absolute;
+    transform: translateX(-1.5em);
+    height: 1em;
+    width: 1em;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: url(/graphics/icon-gmail.svg);
+}

@@ -1,0 +1,18 @@
+#alertpop{
+    position: absolute;
+    height: 7vh;
+    width: 80%;
+    background: rgb(255, 255, 255);
+    left: 10%;
+    z-index: 999;
+    text-align: center;
+    line-height: 7vh;
+    margin: 43vh 0 0 0;
+    border-radius: 1.5em;
+    
+    font-family: 'proxima-nova';
+    font-size: .8em;
+    font-weight: bold;
+
+    box-shadow: 3px 3px 5px rgb(110, 110, 110);
+}
