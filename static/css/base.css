@@ -100,7 +100,7 @@ a:active{
 }
 
 /* SECTION */
-.homeSection{
+section{
     margin: 0 0 0 0;
 
     height: 45vh;
@@ -114,8 +114,8 @@ a:active{
 
 }
 
-/* CONTAINER */
-.container{
+/* ARTICLE */
+article{
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -124,7 +124,7 @@ a:active{
 
     
 }
-.container img{
+article img{
     margin: 1em 0;
     padding: 0;
 

@@ -1,5 +1,0 @@
----
-layout: portfolio
----
-# About
-- portfolio
