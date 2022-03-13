@@ -4,20 +4,24 @@
     <!--HEAD META --> {{ partial "global/head.html"}}
     <!--FAVICON --> {{ partial "global/favicon.html"}}
     <!--GLOBAL STYLES --> {{ partial "global/globalstylesheets.html"}}
-
-
-    <!--LOCAL STYLES --> {{ partial "home/homeStyles.html"}}
-    <!-- GLIGHTBOX --> {{ partial "global/glightbox.html"}}
+    <!--GLIGHTBOX --> {{ partial "global/glightbox.html"}}
 
 </head>
 
 <body>
-    <!--MISCELLANEOUS  --> {{ partial "home/homeMisc.html"}}
+    <!--HEADER  --> 
+    {{ partial "global/header.html"}}
 
-    <!--HEADER  --> {{ partial "global/header.html"}}
+    <!--SECTION -->
+    <section class="homeSection">
+        <h1>Portfolio</h1>
+        <p class="aboutText">A showcase selection of my work.</p>
+    </section>
 
-    <!--SECTION --> {{ partial "portfolio/portfolioSection.html"}}
-    <!--CONTAINER --> {{ partial "portfolio/portfolioContainer.html"}}
+    <!--CONTAINER -->
+    <div class="container">
+       
+    </div>
     
     <!--FOOTER  --> {{ partial "global/footer.html"}}
 </body>

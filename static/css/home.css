@@ -1,29 +1,5 @@
 
-header{
-    height: 55vh;
-}
 
-.homeSection{
-    margin: 0 0 0 0;
-
-    height: 45vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    font-family: 'proxima-nova';
-
-}
-
-h1{
-
-    color: black;
-
-    font-size: 1.3em;
-    font-family: inherit;
-}
 .aboutText{
     display: flex;
     flex-direction: column;
@@ -43,18 +19,14 @@ h1{
 .contactLink{
     display: block;
     text-align: center;
-    margin: .5em 0 0 0;
+    margin: .7em 0 0 0;
     text-decoration: underline;
     color: var(--clr-accent);
     cursor: pointer;
 }
 
-a:hover{
-    color: var(--clr-hover);
-}
-a:active{
-    color: var(--clr-primary);
-}
+
+
 
 
 #twitterlink::before{
