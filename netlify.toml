@@ -3,4 +3,4 @@ TZ = "Europe/Prague"
 
 [build]
 publish = "public"
-command = "hugo"
+command = "hugo --gc --minify"
