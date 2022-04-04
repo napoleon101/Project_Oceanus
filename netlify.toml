@@ -1,6 +1,0 @@
-[context.production.environment]
-TZ = "Europe/Prague"
-
-[build]
-publish = "public"
-command = "hugo --gc --minify"
