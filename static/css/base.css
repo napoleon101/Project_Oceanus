@@ -1,3 +1,44 @@
+/* ROOT */
+:root{
+    --clr-primary: white;
+    --clr-accent: #343841;
+    --clr-secAccent: white;
+    --clr-heading: black;
+    --clr-text: black;
+    --clr-hover: black;
+    --clr-secHover: black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+
+.old{
+    display: none !important;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+button{
+    all: unset;
+    cursor: pointer;
+}
+input{
+    all: unset;
+}
+
+
+
+
+
+/* FONTS */
 @font-face {
     font-family: "adobe-garamond-pro";
     src: url(/fonts/AdobeGaramondPro/AGaramondPro-Regular.otf);

@@ -3,54 +3,84 @@
 <head>
     <!--HEAD META --> {{ partial "global/head.html"}}
     <!--FAVICON --> {{ partial "global/favicon.html"}}
-    <!--GLOBAL STYLES --> {{ partial "global/globalstylesheets.html"}}
+    <!-- GLOBAL STYLES {{ partial "global/globalstylesheets.html"}} -->
     <link rel="stylesheet" href="css/home.css">
     <!--GLIGHTBOX --> {{ partial "global/glightbox.html"}}
 
 </head>
 
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1rem;
+    color: rgb(31, 31, 31);
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(199, 162, 82);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em .8em;
+    max-width: 500px;
+    height: 50%;
+}
+.heading{
+    width: 100%;
+    text-align: left;
+}
+.parag{
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid black;
+}
+.foot{
+    width: 100%;
+    
+}
+h1{
+    font-size: 2em;
+    text-align: left;
+    color: rgb(255, 255, 255);
+}
+p{
+    font-size: 1.4em;
+    line-height: 1.3em;
+    text-align: left;
+}
+
+
+
+</style>
+
+
 <body>
-    <div id="alertpop" style="display: none;">e-mail adress successfully copied to clipboard</div>
-    <script src="/js/linktoclipboard.js"></script>
-
-    <!--HEADER  --> 
-    {{ partial "global/header.html"}}
-
-    <!-- SECTION -->
-    <section class="homeSection">
-        <h1>About</h1>
-        <p class="aboutText">{{.Content}}</p>
-        <h1>Contact</h1>
-        <p>
-            <a class="contactLink" id="instagramlink" href="https://www.instagram.com/oliverklimes/">Instagram</a>
-            <a class="contactLink" id="twitterlink" href="https://twitter.com/oolikklimes">Twitter</a>
-            <a class="contactLink" id="gmaillink" onclick="init(); copyToClipboard()" href="#">E-Mail<a>
-        </p>
-    </section>
-
-    <!-- CONTAINER -->
-    <div class="container">
-        <a href="/photos/divine_source.webp" class="glightbox">
-            <img src="/photos/divine_source.webp" alt="" srcset="">
-        </a>
-        <a href="/photos/Drippin_Gold.jpg" class="glightbox">
-            <img src="/photos/Drippin_Gold.jpg" alt="" srcset="">
-        </a>
-        <a href="/photos/Outlines.jpg" class="glightbox">
-            <img src="/photos/Outlines.jpg" alt="" srcset="">
-        </a>
-        <a href="/photos/Structural_Contrast.jpg" class="glightbox">
-            <img src="/photos/Structural_Contrast.jpg" alt="" srcset="">
-        </a>
-    </div>  
-
-    <!--FOOTER  --> 
-    {{ partial "global/footer.html"}}
-    <script>
-        const lightbox = GLightbox({
-            touchNavigation: true,
-            loop: true,
-        });
-    </script>
+    <div class="main">
+        <div class="container">
+            <div class="heading">
+                <h1>Oliver Klimeš </h1>
+            </div>
+            <div class="parag">
+                <p>Oliver is a  high-school student who makes photos, loves cinema and technology, and takes notes.</p>
+            </div>
+            <div class="foot">
+                <p style="font-size: .9em;">His Blog/Portfolio will be airborne soon...</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
