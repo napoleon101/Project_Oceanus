@@ -2,5 +2,5 @@
 TZ = "Europe/Prague"
 
 [build]
-publish = "dist/public"
-command = "hugo --gc --minify"
+publish = "public"
+command = "hugo"
